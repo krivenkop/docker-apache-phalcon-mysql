@@ -30,7 +30,7 @@ services:
         restart: unless-stopped
         tty: true
         volumes:
-            - ../database:${MYSQL_DATA_DIR}
+            - ./database:${MYSQL_DATA_DIR}
         ports: 
             - "33061:3306"
         networks:
